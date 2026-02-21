@@ -1,0 +1,251 @@
+import math
+import os
+
+def clear():
+    os.system("cls")  # For Windows
+    # os.system("clear")  # Uncomment this instead if using Mac/Linux
+
+def main():
+    clear()
+    print("Welcome to my calculator!!!")
+    print("What this app can do?")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("5. Expression")
+    print("6. LCM")
+    print("7. GCD")
+    print("9. Cube")
+    print("10. Cube root")
+    print("11. Square")
+    print("12. Square root")
+
+    user = input("What do you want to do :").lower()
+
+    if user == "add" or user == "addition":
+        a = int(input("Enter the first value:"))
+        b = int(input("Enter the second value:"))
+        print("The sum is ", a+b)
+        Continue = input("Do you want to continue(yes/no/home):").lower()
+
+        while Continue:
+            if Continue == "yes":
+                clear()
+                a = int(input("Enter the first value:"))
+                b = int(input("Enter the second value:"))
+                print("The sum is ", a+b)
+                Continue = input("Do you want to continue(yes/no/home):").lower()
+
+            elif Continue == "home":
+                return main()
+
+            elif Continue == "no":
+                print("Closing the program...")
+                exit()
+
+    elif user == "subtract" or user == "subtraction":
+        c = int(input("Enter the first value:"))
+        d = int(input("Enter the second value:"))
+        print("The answer is ", c-d)
+        Continue = input("Do you want to continue(yes/no/home):").lower()
+
+        while Continue:
+            if Continue == "yes":
+                clear()
+                c = int(input("Enter the first value:"))
+                d = int(input("Enter the second value:"))
+                print("The answer is ", c-d)
+                Continue = input("Do you want to continue(yes/no/home):").lower()
+
+            elif Continue == "home":
+                return main()
+
+            elif Continue == "no":
+                print("Closing the program...")
+                exit()
+
+    elif user == "multiply" or user == "multiplication":
+        e = int(input("Enter the first value:"))
+        f = int(input("Enter the second value:"))
+        print("The product is ", e*f)
+        Continue = input("Do you want to continue(yes/no/home):").lower()
+
+        while Continue:
+            if Continue == "yes":
+                clear()
+                e = int(input("Enter the first value:"))
+                f = int(input("Enter the second value:"))
+                print("The product is ", e*f)
+                Continue = input("Do you want to continue(yes/no/home):").lower()
+
+            elif Continue == "home":
+                return main()
+
+            elif Continue == "no":
+                print("Closing the program...")
+                exit()
+
+    elif user == "divide" or user == "division":
+        g = int(input("Enter the first value:"))
+        h = int(input("Enter the second value:"))
+        print("The answer is ", g/h)
+        Continue = input("Do you want to continue(yes/no/home):").lower()
+
+        while Continue:
+            if Continue == "yes":
+                clear()
+                g = int(input("Enter the first value:"))
+                h = int(input("Enter the second value:"))
+                print("The answer is ", g/h)
+                Continue = input("Do you want to continue(yes/no/home):").lower()
+
+            elif Continue == "home":
+                return main()
+
+            elif Continue == "no":
+                print("Closing the program...")
+                exit()
+
+    elif user == "expression":
+        in_put = input("Enter the expression:")
+        print("The answer is ", eval(in_put))
+        Continue = input("Do you want to continue(yes/no/home):").lower()
+
+        while Continue:
+            if Continue == "yes":
+                clear()
+                in_put = input("Enter the expression:")
+                print("The answer is ", eval(in_put))
+                Continue = input("Do you want to continue(yes/no/home):").lower()
+
+            elif Continue == "home":
+                return main()
+
+            elif Continue == "no":
+                print("Closing the program...")
+                exit()
+
+    elif user == "lcm":
+        i = int(input("Enter the first value:"))
+        j = int(input("Enter the second value:"))
+        print("The LCM is", math.lcm(i,j))
+        Continue = input("Do you want to continue(yes/no/home):").lower()
+
+        while Continue:
+            if Continue == "yes":
+                clear()
+                i = int(input("Enter the first value:"))
+                j = int(input("Enter the second value:"))
+                print("The LCM is", math.lcm(i,j))
+                Continue = input("Do you want to continue(yes/no/home):").lower()
+
+            elif Continue == "home":
+                return main()
+
+            elif Continue == "no":
+                print("Closing the program...")
+                exit()
+
+    elif user == "gcd":
+        k = int(input("Enter the first value:"))
+        l = int(input("Enter the second value:"))
+        print("The answer is ", math.gcd(k,l))
+        Continue = input("Do you want to continue(yes/no/home):").lower()
+
+        while Continue:
+            if Continue == "yes":
+                clear()
+                k = int(input("Enter the first value:"))
+                l = int(input("Enter the second value:"))
+                print("The answer is ", math.gcd(k,l))
+                Continue = input("Do you want to continue(yes/no/home):").lower()
+
+            elif Continue == "home":
+                return main()
+
+            elif Continue == "no":
+                print("Closing the program...")
+                exit()
+
+    elif user == "square":
+        m = int(input("Enter the value to be squared:"))
+        print("The answer is ", m**2)
+        Continue = input("Do you want to continue(yes/no/home):").lower()
+
+        while Continue:
+            if Continue == "yes":
+                clear()
+                m = int(input("Enter the value to be squared:"))
+                print("The answer is ", m**2)
+                Continue = input("Do you want to continue(yes/no/home):").lower()
+
+            elif Continue == "home":
+                return main()
+
+            elif Continue == "no":
+                print("Closing the program...")
+                exit()
+
+    elif user == "cube":
+        n = int(input("Enter the value to be cubed:"))
+        print("The answer is ", n**3)
+        Continue = input("Do you want to continue(yes/no/home):").lower()
+
+        while Continue:
+            if Continue == "yes":
+                clear()
+                n = int(input("Enter the value to be cubed:"))
+                print("The answer is ", n**3)
+                Continue = input("Do you want to continue(yes/no/home):").lower()
+
+            elif Continue == "home":
+                return main()
+
+            elif Continue == "no":
+                print("Closing the program...")
+                exit()
+
+    elif user == "square root":
+        o = int(input("Enter the value:"))
+        print("The answer is ", math.sqrt(o))
+        Continue = input("Do you want to continue(yes/no/home):").lower()
+
+        while Continue:
+            if Continue == "yes":
+                clear()
+                o = int(input("Enter the value:"))
+                print("The answer is ", math.sqrt(o))
+                Continue = input("Do you want to continue(yes/no/home):").lower()
+
+            elif Continue == "home":
+                return main()
+
+            elif Continue == "no":
+                print("Closing the program...")
+                exit()
+
+    elif user == "cube root":
+        p = int(input("Enter the value:"))
+        print("The answer is ", p**(1/3))
+        Continue = input("Do you want to continue(yes/no/home):").lower()
+
+        while Continue:
+            if Continue == "yes":
+                clear()
+                p = int(input("Enter the value:"))
+                print("The answer is ", p**(1/3))
+                Continue = input("Do you want to continue(yes/no/home):").lower()
+
+            elif Continue == "home":
+                return main()
+
+            elif Continue == "no":
+                print("Closing the program...")
+                exit()
+
+    else:
+        print("Not available!")
+        return main()
+
+main()
